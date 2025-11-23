@@ -25,6 +25,7 @@ func TestWaitGroup(t *testing.T) {
 		go RunAsynchronous(group)
 	}
 
+	//tunggu sampai goroutine selesai
 	group.Wait()
-	fmt.Println("Selesai")
+	fmt.Println("Go-Routine Selesai")
 }
